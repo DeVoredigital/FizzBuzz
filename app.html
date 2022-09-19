@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>100 Steps : a Coding Project by Richard DeVore</title>
+    <title>Fizz Buzz : a Coding Project by Richard DeVore</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,7 +32,7 @@
 <!-- ===== NAV Section ===== -->
 <nav class="navbar navbar-expand-md navbar-light fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand logoFont" href="index.html"><img src = "img/apple-touch-icon.png" class="d-inline-block align-text-top" width="30" height="24" alt="redz.cafe">  100 Steps</a>
+        <a class="navbar-brand logoFont" href="index.html"><img src = "img/apple-touch-icon.png" class="d-inline-block align-text-top" width="30" height="24" alt="redz.cafe">  Fizz Buzz</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -59,33 +59,43 @@
         </div>
     </div>
 </nav>
+
 <!-- ===== Main Section ===== -->
 <main class="flex-shrink-0">
     <div class="container mt-5">
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col col-lg-4 border-end border-2">
-                <h1>100 Steps</h1>
-                <h4 class="lead">Stepping on through 1 Step at a time with JS</h4>
+                <h1>Fizz Buzz</h1>
+                <h4 class="lead">Looping on through with JS</h4>
                 <h2 class="mt-5 border-bottom border-2">Instructions</h2>
                 <p>Enter a Starting and Ending value. Press the button and your steps will appear</p>
             </div>
             <div class="col col-8">
                 <div>
-                    <h5>
-                        Enter Values
-                    </h5>
+                    <div class="row gy-2 gx-3">
+                        <div class="col">
+                            <h5>
+                                Enter a Fizz #
+                            </h5>
+                        </div>
+                        <div class="col">
+                            <h5>
+                                Enter a Buzz #
+                            </h5>
+                        </div>
+                    </div>
                     <form class="row gy-2 gx-3">
                         <div class="col">
-                            <input id="startValue" type="number" class="form-control" 
+                            <input id="fizzValue" type="number" class="form-control" 
                             placeholder="Start Value" value="0" aria-label="Start Value">
                         </div>
                         <div class="col">
-                            <input id="endValue" type="number" class="form-control" 
+                            <input id="buzzValue" type="number" class="form-control" 
                             placeholder="End Value" value="0" aria-label="End Value">
                         </div>
                         
                         <div class="col-12 d-flex justify-content-end">
-                            <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Display the Steps</button>
+                            <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Display the Loops</button>
                         </div>
                     </form>
                     <h2 class="mt-5 border-bottom border-2">Results</h2>
@@ -106,7 +116,7 @@
 </main> 
 
 <!-- ===== FOOTER Section ===== -->
-<footer class="footer mt-auto py-3 bg-danger">
+    <footer class="footer mt-auto py-3 bg-danger">
     <div class="container-fluid">
        <div class="row row-cols-1 row-cols-lg-3 gy-2">
         <div class="col order-last order-lg-first text-light">
@@ -125,7 +135,19 @@
         </div>
        </div>
     </div>
-</footer>
+    </footer>
+
+<!-- Template-->
+    <template id="fbTemplate">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </template>
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
